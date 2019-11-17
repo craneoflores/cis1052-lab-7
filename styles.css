@@ -43,9 +43,6 @@ body {
     list-style: none;
 }
 
-.supplemental-links {
-    display: none;
-}
 
 .profile {
     display: inline-block;
@@ -85,7 +82,7 @@ body {
 .user-activity > header {
     border-bottom: solid 1px #aaa;
     padding: 8px;}
-    
+
 .news-feed {
     display: flex;
     flex-direction: column;
@@ -139,4 +136,14 @@ body {
 
 .news-feed .review header [user], .news-feed .review header [book] {
     font-weight: bold;
+}
+
+@media screen and (max-width:900px) {
+    .user-activity{
+        display:none;
+    }
+    .page-content{
+        margin: 20px 0px 20px -275px;
+    }
+
 }
